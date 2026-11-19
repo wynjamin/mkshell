@@ -54,7 +54,7 @@ def search_package(inp: BuildInput) -> Optional[str]:
 
 
 def is_in_shell() -> bool:
-    var = os.environ.get("PATH")
+    var = os.environ.get("IN_NIX_SHELL")
     return not var is None and len(var.strip()) != 0
 
 
