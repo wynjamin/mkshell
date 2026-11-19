@@ -55,7 +55,7 @@ def search_package(inp: BuildInput) -> Optional[str]:
 
 def is_in_shell() -> bool:
     var = os.environ.get("PATH")
-    return not var is None and len(var.strip()) == 0
+    return not var is None and len(var.strip()) != 0
 
 
 def get_inputs() -> list[str]:
