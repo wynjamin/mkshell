@@ -85,7 +85,7 @@ pkgs.mkShell {{
     {inputs}
   ];
 }}
-""".format(inputs=("\n" + " " * 2 * 2).join(inputs))[:-1]
+""".format(inputs=("\n" + " " * 2 * 2).join(inputs)).strip()
 
 
 def main():
