@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import os, subprocess, json
 from typing import Optional
 from dataclasses import dataclass
